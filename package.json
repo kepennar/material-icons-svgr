@@ -1,0 +1,24 @@
+{
+  "name": "material-icons-svgr",
+  "version": "1.0.0",
+  "author": "Kevin Pennarun",
+  "license": "MIT",
+  "files": [
+    "icons"
+  ],
+  "scripts": {
+    "prepublish": "yarn generate",
+    "generate": "esr src/generate.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^16.0.0",
+    "@svgr/core": "^6.2.1",
+    "@material-icons/svg": "^1.0.28",
+    "typescript": "^4.7.3",
+    "esbuild-runner": "^2.2.1",
+    "esbuild": "^0.14.43"
+  },
+  "peerDependencies": {
+    "react": ">= 16"
+  }
+}
